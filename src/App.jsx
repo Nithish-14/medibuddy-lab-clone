@@ -1,6 +1,6 @@
 import React, {useContext} from 'react'
 
-import {Header, SearchBar, Icons, Loader, Banners} from "./components"
+import {Header, SearchBar, Icons, Loader, Banners, FeaturedHealth} from "./components"
 
 import './styles/style.css'
 
@@ -21,6 +21,7 @@ const App = () => {
         <>
           <Icons />
           <Banners />
+          <FeaturedHealth />
         </>}
   </div>
  )
