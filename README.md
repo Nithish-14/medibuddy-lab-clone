@@ -1,1 +1,1 @@
-# medibuddy
+# medibuddy-lab
