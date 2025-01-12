@@ -1,1 +1,1 @@
-# medibuddy-clone
+# medibuddy
