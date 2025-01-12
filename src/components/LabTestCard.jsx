@@ -10,6 +10,7 @@ const LabTestCard = ({detail}) => {
   return (
    testsSummary.map((test, index) => (
         <li className="lab-test-card" key={index}>
+        <div className="sponsered-container" style={{backgroundColor: 'rgb(31, 170, 31)'}}>&#10003; Cashless</div>
             <div className="lab-test-name-container">
                 <h2 className="booklab-test-heading">{test}</h2>
                 <div className="reports-container">

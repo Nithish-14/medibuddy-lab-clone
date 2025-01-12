@@ -5,10 +5,12 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-y: scroll;
 }
 
 body {
   margin: 0px;
+  margin-top: 80px;
 }
 
 input:focus {

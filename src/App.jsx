@@ -1,7 +1,7 @@
 import React, {useContext} from 'react'
 
 import {Header, SearchBar, Icons, Loader, Banners, FeaturedHealth, 
-  LabTest, Achievement, LifeStyle, HealthCheck, UsersFeedback, HowItWorks, SafeLab} from "./components"
+  LabTest, Achievement, LifeStyle, HealthCheck, UsersFeedback, HowItWorks, SafeLab, FrequentryAskedQuestions} from "./components"
 
 import './styles/style.css'
 
@@ -36,6 +36,7 @@ const App = () => {
         <UsersFeedback />
         <HowItWorks />
         <SafeLab />
+        <FrequentryAskedQuestions />
         </>
       }
   </div>
