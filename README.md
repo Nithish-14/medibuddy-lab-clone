@@ -11,7 +11,7 @@
 
 1. **Clone the Repository**  
    ```bash
-   git clone https://github.com/yourusername/medibuddy-lab-clone.git
+   git clone https://github.com/Nithish-14/medibuddy-lab-clone.git
 
 2. **Navigate into the project directory**
     ```bash
