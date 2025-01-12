@@ -1,10 +1,13 @@
 import React, {useContext} from 'react'
 
-import {Header, SearchBar, Icons, Loader, Banners, FeaturedHealth} from "./components"
+import {Header, SearchBar, Icons, Loader, Banners, FeaturedHealth, 
+  LabTest, Achievement, LifeStyle, HealthCheck, UsersFeedback, HowItWorks, SafeLab} from "./components"
 
 import './styles/style.css'
 
 import { PageConfigContext } from "./services/PageConfig"
+import { LabTestFilterProvider } from './services/FilterPackage'
+import { HealthCheckUpProvider } from './services/FilterPackage'
 
 
 const App = () => {
@@ -21,8 +24,20 @@ const App = () => {
         <>
           <Icons />
           <Banners />
+        <HealthCheckUpProvider>
           <FeaturedHealth />
-        </>}
+        </HealthCheckUpProvider>
+        <LabTestFilterProvider>
+           <LabTest />
+        </LabTestFilterProvider>
+        <Achievement />
+        <LifeStyle />
+        <HealthCheck />
+        <UsersFeedback />
+        <HowItWorks />
+        <SafeLab />
+        </>
+      }
   </div>
  )
 }

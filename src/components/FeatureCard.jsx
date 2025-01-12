@@ -7,10 +7,11 @@ import { FaPlus } from "react-icons/fa";
 import { FaMinus } from "react-icons/fa6";
 
 const FeatureCard = ({detail}) => {
-   const {packageDisplayName, reportsTatText, testCount, testsSummary, isRadiologyIncluded, fastingHoursText, visitType, price} = detail;
+   const {isSponsored, packageDisplayName, reportsTatText, testCount, testsSummary, isRadiologyIncluded, fastingHoursText, visitType, price, isPresentInCart} = detail;
   
   return (
     <li className="package-list-element">
+        {isSponsored && <div className="sponsered-container">Sponsored</div>}
         <h1 className="package-main-heading">{packageDisplayName}</h1>
         <div className="reports-container">
             <BiSolidTimer color="#156ddc" size={20} className="package-icon" />
@@ -77,9 +78,9 @@ const FeatureCard = ({detail}) => {
                 <p style={{fontSize: '18px', marginLeft: '5px', fontWeight: '600'}}>{price}</p>
             </div>
             <div className="add-to-cart-container">
-                <button type="button" className="add-button"><FaPlus color="#156ddc" /></button>
-                1
                 <button type="button" className="add-button"><FaMinus color="#156ddc" /></button>
+                {isPresentInCart ? 1 : 0}
+                <button type="button" className="add-button"><FaPlus color="#156ddc" /></button>
             </div>
         </div>
     </li>

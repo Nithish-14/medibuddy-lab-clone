@@ -7,7 +7,7 @@ const IconsCard = ({icon}) => {
   return (
     <li className="icons-list">
         <a href={deeplink} target='_blank' className="icons-anchor">
-            <img src={iconUrl} alt={iconText} className="icons-image" />
+            <img src={iconUrl} alt={iconText} className="icons-image icon-hover-effect" />
             <p className="icons-para">{iconText}</p>
         </a>
     </li>

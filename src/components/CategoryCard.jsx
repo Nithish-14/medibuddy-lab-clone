@@ -1,12 +1,15 @@
-import React from 'react'
+import React, {useContext} from 'react'
 
-const CategoryCard = ({category}) => {
+import { HealthCheckUpFilterContext, LabTestFilterContext } from '../services/FilterPackage'
+
+const CategoryCard = ({category, labtest}) => {
+  const {currentFilter, setFilter} = useContext(labtest ? LabTestFilterContext : HealthCheckUpFilterContext);
 
   return (
     <li className="category-list-element">
-      <button className={`category-button ${category==="Popular" ? "active-button" : ""}`}>{category}</button>
+      <button type="button" className={`category-button ${category===currentFilter ? "active-button" : ""}`} onClick={() => setFilter(category)}>{category}</button>
     </li>
   )
 }
 
-export default CategoryCard
+export default CategoryCard 
